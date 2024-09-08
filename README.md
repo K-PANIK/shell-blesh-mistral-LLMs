@@ -1,42 +1,46 @@
-# zsh-copilot
+# shell-blesh-mistral-LLMs
 
-
-Get suggestions **truly** in your shell. No `suggest` bullshit. Just press `CTRL + Z` and get your suggestion.
-
-https://github.com/Myzel394/zsh-copilot/assets/50424412/ed2bc8ac-ce49-4012-ab73-53cf6f3151a2
+Blesh, Bash Line Editor, linked to AI Mistral LLMs to enpowers shell command generation tasks, including fill-in-the-middle and command autocompletion.
 
 ## Installation
 
 ### Dependencies
 
-Please make sure you have the following dependencies installed:
-
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-* [jq](https://github.com/jqlang/jq)
-* [curl](https://github.com/curl/curl)
+Install blesh first (refer to §Quick-Instructions https://github.com/K-PANIK/ble.sh?tab=readme-ov-file#quick-instructions)
 
 ```sh
-git clone https://github.com/Myzel394/zsh-copilot.git ~/.zsh-copilot
-echo "source ~/.zsh-copilot/zsh-copilot.plugin.zsh" >> ~/.zshrc
+# Example : Quick INSTALL to BASHRC
+git clone --recursive --depth 1 --shallow-submodules https://github.com/K-PANIK/ble.sh
+make -C ble.sh install PREFIX=~/.local
+echo 'source ~/.local/share/blesh/ble.sh' >> ~/.bashrc
 ```
 
 ### Configuration
 
-You need to have an OPENAI API key with access to `gpt-4` to use this plugin. Expose this via the `OPENAI_API_KEY` environment variable:
+You need to have a model api private key with access to `MISTRAL LLMs` to use it (https://console.mistral.ai/build/agents).
 
-```sh
-export OPENAI_API_KEY=<your-api-key>
-```
+1. Expose your key via the `MISTRAL_API_KEY` environment variable:
 
-I tried out using `gpt-3` but the results were garbage.
+    ```sh
+    echo "export MISTRAL_API_KEY=<your-api-key>" >> ~/.bashrc
+    ```
+2. Clone repository 
+    ```sh
+    git clone  https://github.com/K-PANIK/shell-blesh-mistral-LLMs.git --branch=main
+    cd shell-blesh-mistral-LLMs/
+    ```
+3. Configure shell-blesh-mistral-LLMs script at bash startup:
+    ```sh
+    echo "source $(pwd)/shell-blesh-mistral-LLMs.sh" >> ~/.bashrc
+    ```
 
-To see available configurations, run:
+### How to use
 
-```sh
-zsh-copilot --help
-```
+Just press `CTRL + t` and get your suggestion. Suggestion can be autocompletion or new command.
+Talk to Mistal directly by starting your command with hashtag #
 
-## Usage
-
-Type in your command or your message and press `CTRL + Z` to get your suggestion!
-
+### Here are some examples
+  * User input: 'list files in current directory'; Your response: '=ls # ls is the builtin command for listing files'
+  * User input: 'cd /tm'; Your response: '+p # /tmp is the standard temp folder on linux and mac'.
+  * User input: 'curl -O http'; Your response: '+s://www.example.com'.
+  * User input: '# Who are you?'; Your response: 'I am $AI_MODEL. What can I do for you?'.
