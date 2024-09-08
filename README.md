@@ -31,7 +31,7 @@ You need to have a model api private key with access to `MISTRAL LLMs` to use it
     ```
 3. Configure shell-blesh-mistral-LLMs script at bash startup:
     ```sh
-    echo "source $(pwd)/shell-blesh-mistral-LLMs.sh" >> ~/.bashrc
+    echo "source $(pwd)/blesh-mistral.sh" >> ~/.bashrc
     ```
 
 ### How to use
