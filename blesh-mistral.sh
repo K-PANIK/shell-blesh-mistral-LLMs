@@ -1,4 +1,5 @@
 #!/bin/bash
+
 CUR_DATE=`date`
 AI_MODEL="mistral-large-latest"
 echo "BLESH MISTRAL AI (model=$AI_MODEL) is loaded at $CUR_DATE"
@@ -101,7 +102,7 @@ function ia_shell_assistance() {
     if [[ "$char_key" == '=' ]];
     then
         # output model failure check
-        if [ ${suggestion:0:1} == '+' ];
+        if [ "${suggestion:0:1}" == '+' ];
         then
             suggestion=${suggestion:1:${#suggestion}}
             if [ $ASSIST_DEBUG == "true" ];
@@ -117,7 +118,7 @@ function ia_shell_assistance() {
     elif [[ "$char_key" == '+' ]];
     then
         # output model failure check
-        if [ ${suggestion:0:1} == '=' ];
+        if [ "${suggestion:0:1}" == '=' ];
         then
             suggestion=${suggestion:1:${#suggestion}}
             if [ $ASSIST_DEBUG == "true" ];
