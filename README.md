@@ -49,6 +49,9 @@ Talk to Mistal directly by starting your command with hashtag #
 
 https://github.com/user-attachments/assets/13cafea1-93ef-4833-bc36-4dd092ac093e
 
+## Here is a video teaser, 'It's not a fake but an AI Enhanced Shell'
+
+https://github.com/user-attachments/assets/625d14f1-657b-4d61-b5e6-90498d13eac4
 
 
 
