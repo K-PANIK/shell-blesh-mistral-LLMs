@@ -45,9 +45,11 @@ Talk to Mistal directly by starting your command with hashtag #
   * User input: 'curl -O http'; Your response: '+s://www.example.com'.
   * User input: '# Who are you?'; Your response: 'I am $AI_MODEL. What can I do for you?'.
 
-### Here is a video teaser about 'How to check memory leak of a programm and how to tune linux kernel memory'
+## Here is a video teaser about 'How to check memory leak of a programm and how to tune linux kernel memory'
 
-https://github.com/user-attachments/assets/8a2262e7-8536-4953-a92a-7a6248c4b741
+https://github.com/user-attachments/assets/13cafea1-93ef-4833-bc36-4dd092ac093e
+
+
 
 
 
