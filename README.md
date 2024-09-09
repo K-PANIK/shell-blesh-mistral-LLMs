@@ -39,8 +39,16 @@ You need to have a model api private key with access to `MISTRAL LLMs` to use it
 Just press `CTRL + t` and get your suggestion. Suggestion can be autocompletion or new command.
 Talk to Mistal directly by starting your command with hashtag #
 
-### Here are some examples
+### Here are some examples (output processing)
   * User input: 'list files in current directory'; Your response: '=ls # ls is the builtin command for listing files'
   * User input: 'cd /tm'; Your response: '+p # /tmp is the standard temp folder on linux and mac'.
   * User input: 'curl -O http'; Your response: '+s://www.example.com'.
   * User input: '# Who are you?'; Your response: 'I am $AI_MODEL. What can I do for you?'.
+
+### Here is a video teaser about 'How to check memory leak of a programm and how to tune linux kernel memory'
+
+https://github.com/user-attachments/assets/8a2262e7-8536-4953-a92a-7a6248c4b741
+
+
+
+
